@@ -28,22 +28,9 @@ We gave our data to big tech. Our photos, our messages, our memories — stored 
 
 ## Infrastructure
 
-### Domains
-
-| Domain | DNS | Points To | Purpose |
-|--------|-----|-----------|---------|
-| besovereign.xyz | Cloudflare | Vercel | Main site |
-| robertmillerconsultancy.com | Wix (locked) | redirect.pizza | Legacy redirect |
-
-### Redirect Setup (robertmillerconsultancy.com)
-
-Since the legacy domain is stuck at Wix (registrar won't transfer), we use **redirect.pizza** to handle 301 redirects:
-
-- **Service:** [redirect.pizza](https://redirect.pizza) (free)
-- **DNS Records (set in Wix):**
-  - A record: `89.106.200.1`
-  - CNAME www: `edge.redirect.pizza`
-- **Destination:** https://robertmiller.xyz
+| Domain | DNS | Hosting |
+|--------|-----|---------|
+| besovereign.xyz | Cloudflare | Vercel |
 
 ### Environment Variables
 
