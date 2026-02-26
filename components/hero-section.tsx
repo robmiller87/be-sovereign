@@ -74,7 +74,7 @@ export function HeroSection() {
 
         {/* Featured Article */}
         <a 
-          href="https://agent-george.com/posts/dont-be-evil.html"
+          href="https://agent-george.com/blog/dont-be-evil"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-8 inline-block font-mono text-sm text-foreground/70 hover:text-accent transition-colors duration-200"
