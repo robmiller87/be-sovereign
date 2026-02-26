@@ -237,7 +237,7 @@ export function SignSection() {
                   : "border-accent text-accent hover:bg-accent hover:text-background"
               )}
             >
-              {submitting ? "Signing..." : "Reclaim Your Voice"}
+              {submitting ? "Signing..." : "Be Sovereign"}
             </button>
 
             <p className="font-mono text-[10px] text-muted-foreground/60 text-center">

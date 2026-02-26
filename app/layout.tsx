@@ -18,22 +18,22 @@ const ibmPlexMono = IBM_Plex_Mono({
 const bebasNeue = Bebas_Neue({ weight: "400", subsets: ["latin"], variable: "--font-bebas" })
 
 export const metadata: Metadata = {
-  title: "Reclaim — Take Back Your Digital Life",
+  title: "Be Sovereign — Own Your Digital Life",
   description:
-    "We gave our data to big tech. Now we take it back. Sign the declaration. Your signature is stored on-chain — permanent, uncensorable, yours.",
-  keywords: ["reclaim", "data sovereignty", "privacy", "self-custody", "decentralization", "web3", "arkiv", "digital independence"],
+    "We gave our data to big tech. Now we choose sovereignty. Sign the declaration. Your signature is stored on-chain — permanent, uncensorable, yours.",
+  keywords: ["sovereignty", "data sovereignty", "privacy", "self-custody", "decentralization", "web3", "arkiv", "digital independence"],
   authors: [{ name: "Robert Miller", url: "https://robertmiller.xyz" }],
   openGraph: {
-    title: "Reclaim — Take Back Your Digital Life",
-    description: "We gave our data to big tech. Now we take it back. Sign on-chain.",
-    url: "https://declaration-digital-independence.vercel.app",
-    siteName: "Reclaim",
+    title: "Be Sovereign — Own Your Digital Life",
+    description: "We gave our data to big tech. Now we choose sovereignty. Sign on-chain.",
+    url: "https://besovereign.xyz",
+    siteName: "Be Sovereign",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Reclaim — Take Back Your Digital Life",
-    description: "We gave our data to big tech. Now we take it back. Sign on-chain.",
+    title: "Be Sovereign — Own Your Digital Life",
+    description: "We gave our data to big tech. Now we choose sovereignty. Sign on-chain.",
     creator: "@rob_miller87",
   },
   icons: {
