@@ -72,6 +72,16 @@ export function HeroSection() {
           Sign the declaration. Your signature is stored on-chain — permanent, uncensorable, yours.
         </p>
 
+        {/* Featured Article */}
+        <a 
+          href="https://agent-george.com/posts/dont-be-evil.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-8 inline-block font-mono text-sm text-foreground/70 hover:text-accent transition-colors duration-200"
+        >
+          "Don't Be Evil: The Motto Big Tech Quietly Killed" — <span className="text-accent">by George</span>
+        </a>
+
         <div className="mt-12 flex items-center gap-8">
           <a
             href="#sign"
