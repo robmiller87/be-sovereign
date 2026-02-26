@@ -48,7 +48,7 @@ export function HeroSection() {
       <div ref={contentRef} className="flex-1 w-full">
         <SplitFlapAudioProvider>
           <div className="relative">
-            <SplitFlapText text="DECLARATION" speed={80} />
+            <SplitFlapText text="RECLAIM" speed={80} />
             <div className="mt-4">
               <SplitFlapMuteToggle />
             </div>
@@ -56,20 +56,20 @@ export function HeroSection() {
         </SplitFlapAudioProvider>
 
         <h2 className="font-[var(--font-bebas)] text-muted-foreground/60 text-[clamp(1rem,3vw,2rem)] mt-4 tracking-wide">
-          Of Digital Independence
+          Take Back Your Digital Life
         </h2>
 
         {/* The Declaration Quote */}
         <blockquote className="mt-12 max-w-2xl border-l-2 border-accent pl-6">
           <p className="font-mono text-base md:text-lg text-foreground/90 leading-relaxed italic">
-            "We hold these truths to be self-evident: that our data belongs to us, 
-            that no corporation should hold our digital lives hostage, 
-            and that sovereignty is not a feature — it is a right."
+            "We gave our data to big tech. Our photos, our messages, our memories — 
+            stored on their servers, governed by their terms, deleted at their will. 
+            No more. We reclaim what is ours."
           </p>
         </blockquote>
 
         <p className="mt-8 max-w-md font-mono text-sm text-muted-foreground leading-relaxed">
-          Your signature is stored on-chain. No company can delete it. No server can lose your voice.
+          Sign the declaration. Your signature is stored on-chain — permanent, uncensorable, yours.
         </p>
 
         <div className="mt-12 flex items-center gap-8">
@@ -77,7 +77,7 @@ export function HeroSection() {
             href="#sign"
             className="group inline-flex items-center gap-3 border border-foreground/20 px-6 py-3 font-mono text-xs uppercase tracking-widest text-foreground hover:border-accent hover:text-accent transition-all duration-200"
           >
-            <ScrambleTextOnHover text="Sign the Declaration" as="span" duration={0.6} />
+            <ScrambleTextOnHover text="Reclaim Now" as="span" duration={0.6} />
             <BitmapChevron className="transition-transform duration-[400ms] ease-in-out group-hover:rotate-45" />
           </a>
           <a

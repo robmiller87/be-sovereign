@@ -18,22 +18,22 @@ const ibmPlexMono = IBM_Plex_Mono({
 const bebasNeue = Bebas_Neue({ weight: "400", subsets: ["latin"], variable: "--font-bebas" })
 
 export const metadata: Metadata = {
-  title: "Declaration of Digital Independence",
+  title: "Reclaim — Take Back Your Digital Life",
   description:
-    "We hold these truths to be self-evident: that our data belongs to us, that no corporation should hold our digital lives hostage, and that sovereignty is not a feature — it is a right.",
-  keywords: ["digital independence", "data sovereignty", "privacy", "self-custody", "decentralization", "web3", "arkiv"],
+    "We gave our data to big tech. Now we take it back. Sign the declaration. Your signature is stored on-chain — permanent, uncensorable, yours.",
+  keywords: ["reclaim", "data sovereignty", "privacy", "self-custody", "decentralization", "web3", "arkiv", "digital independence"],
   authors: [{ name: "Robert Miller", url: "https://robertmiller.xyz" }],
   openGraph: {
-    title: "Declaration of Digital Independence",
-    description: "Sign the declaration. Your signature is stored on-chain. No company can delete it.",
+    title: "Reclaim — Take Back Your Digital Life",
+    description: "We gave our data to big tech. Now we take it back. Sign on-chain.",
     url: "https://declaration-digital-independence.vercel.app",
-    siteName: "Declaration of Digital Independence",
+    siteName: "Reclaim",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Declaration of Digital Independence",
-    description: "Sign the declaration. Your signature is stored on-chain. No company can delete it.",
+    title: "Reclaim — Take Back Your Digital Life",
+    description: "We gave our data to big tech. Now we take it back. Sign on-chain.",
     creator: "@rob_miller87",
   },
   icons: {

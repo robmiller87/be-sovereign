@@ -203,7 +203,7 @@ export function ColophonSection() {
         className="mt-24 pt-8 border-t border-border/20 flex flex-col md:flex-row md:items-center md:justify-between gap-4"
       >
         <p className="font-mono text-[10px] text-muted-foreground uppercase tracking-widest">
-          © 2026 Declaration of Digital Independence. Open source.
+          © 2026 Reclaim. Open source.
         </p>
         <p className="font-mono text-[10px] text-muted-foreground">
           Data stored on Arkiv. Immutable. Uncensorable. Yours.

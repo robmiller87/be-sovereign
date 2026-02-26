@@ -167,7 +167,7 @@ export function SignSection() {
       <div ref={headerRef} className="mb-16 flex flex-col md:flex-row md:items-end md:justify-between gap-8">
         <div>
           <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">03 / Take Action</span>
-          <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">SIGN THE DECLARATION</h2>
+          <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">JOIN THE MOVEMENT</h2>
         </div>
         <div className="flex items-baseline gap-2">
           <span className="font-[var(--font-bebas)] text-6xl md:text-8xl text-accent">{signatures.length}</span>
@@ -237,7 +237,7 @@ export function SignSection() {
                   : "border-accent text-accent hover:bg-accent hover:text-background"
               )}
             >
-              {submitting ? "Signing..." : "Sign the Declaration"}
+              {submitting ? "Signing..." : "Reclaim Your Voice"}
             </button>
 
             <p className="font-mono text-[10px] text-muted-foreground/60 text-center">
