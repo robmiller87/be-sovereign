@@ -249,9 +249,16 @@ export function SignSection() {
         {/* Recent Signatures */}
         <div ref={signaturesRef}>
           <div className="flex items-center justify-between mb-6">
-            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-              Recent Signatories
-            </span>
+            <div className="flex items-center gap-4">
+              <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+                Signatories
+              </span>
+              {!loading && signatures.length > 0 && (
+                <span className="font-mono text-[10px] px-2 py-0.5 bg-accent/10 text-accent border border-accent/30">
+                  {signatures.length}
+                </span>
+              )}
+            </div>
             <button
               onClick={loadSignatures}
               className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground hover:text-accent transition-colors"
@@ -293,6 +300,8 @@ export function SignSection() {
 }
 
 function SignatureCard({ signature, index }: { signature: Signature; index: number }) {
+  const explorerBase = "https://explorer.mendoza.hoodi.arkiv.network"
+  
   return (
     <article className="group border border-border/30 p-4 hover:border-accent/40 transition-colors">
       <div className="flex items-start justify-between mb-2">
@@ -306,18 +315,30 @@ function SignatureCard({ signature, index }: { signature: Signature; index: numb
       {signature.message && (
         <p className="font-mono text-xs text-muted-foreground italic mb-2">"{signature.message}"</p>
       )}
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 flex-wrap">
         {signature.signerWallet && (
           <span className="font-mono text-[10px] text-muted-foreground/60">
             {signature.signerWallet.slice(0, 8)}...
           </span>
         )}
+        {signature.id && (
+          <a
+            href={`${explorerBase}/entity/${signature.id}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-mono text-[10px] text-muted-foreground/60 hover:text-accent transition-colors"
+            title="View entity on explorer"
+          >
+            Entity ↗
+          </a>
+        )}
         {signature.txHash && (
           <a
-            href={`https://explorer.arkiv.network/tx/${signature.txHash}`}
+            href={`${explorerBase}/tx/${signature.txHash}`}
             target="_blank"
             rel="noopener noreferrer"
             className="font-mono text-[10px] text-accent hover:underline"
+            title="View transaction on explorer"
           >
             Verify →
           </a>
